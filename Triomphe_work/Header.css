@@ -1,0 +1,68 @@
+.header .logo-nav {
+    background-color: bisque;
+    height: 100px;
+
+}
+
+.header .logo-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.header .logo-nav ul li{
+    list-style: none;
+    margin: auto;
+
+}
+
+.logo-nav h2{
+    font-size: 32px;
+}
+
+
+.header .logo-nav ul li img{
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    z-index: 20;
+    display: none;
+    
+
+}
+
+.header .logo-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+
+}
+
+.home{
+    height: 650px;
+    width: 100%;
+    background: url(./Logo.IS.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-content .home-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.home-content .home-desc{
+    font-size: 20px;
+}
+
