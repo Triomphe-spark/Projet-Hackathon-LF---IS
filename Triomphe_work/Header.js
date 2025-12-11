@@ -26,19 +26,21 @@ window.addEventListener('scroll', function() {
 });
 
 // Effet box outils
- let boxOutil = document.querySelectorAll('list-outil');
+ var boxOutil = document.querySelectorAll("list-outil");
 
- boxOutil.forEach(item => {
-    item.addEventListener('mouseover', Fonction1);
-    item.addEventListener('mouseout', Fonction2);
- });
-
- function Fonction1(){
-    this.style.height = '310px';
+  function Fonction1(){
+    this.style.heigth = '310px';
     this.style.margin = '5px';
  }
 
   function Fonction2(){
-    this.style.height = '300px';
+    this.style.heigth = 'blue';
     this.style.margin = '10px';
  }
+
+ boxOutil.forEach(item => {
+    item.addEventListener('click', Fonction1);
+    item.addEventListener('mouseout', Fonction2);
+ });
+
+
